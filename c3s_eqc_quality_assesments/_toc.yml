@@ -1,0 +1,85 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: About us 
+  chapters:
+  - file: aboutclimaax
+    title: The CLIMAAX project
+  - file: funding
+    title: Funding opportunities
+
+- caption: 🌍 CRA Steps
+  chapters:
+  - file: CRA_steps/framework
+    title: Framework description
+  - file: CRA_steps/scoping/scoping
+    title: Scoping
+  - file: CRA_steps/identification/risk_identification
+    title: Risk Identification 
+    sections:
+    - file: CRA_steps/identification/datasets
+      title:  CRA Datasets
+      sections:
+      - file: CRA_steps/identification/hazard_data
+        title: Hazard datasets
+      - file: CRA_steps/identification/exposure_data
+        title: Exposure datasets
+      - file: CRA_steps/identification/vulnerability_data
+        title: Vulnerability datasets
+  - file: CRA_steps/analysis/risk_analysis
+    title: Risk Analysis
+    sections:
+    - file: CRA_steps/analysis/workflows
+      title: Risk workflows
+      sections:
+      - file: CRA_steps/analysis/about_workflows
+        title: About CRA workflows
+      - file: CRA_steps/analysis/how_to
+        title: How to use risk workflows
+      - file: notebooks/workflows/floods
+        title: 🌊 FLOODS
+        sections:
+        - file: notebooks/workflows/FLOODS/FLOOD_RIVER
+          title: River Flood damages
+        - file: notebooks/workflows/FLOODS/FLOOD_COASTAL
+          title: Coastal Flood damages
+        - file: notebooks/workflows/vulnerability-curves-adjustment
+          title: Working with vulnerability curves
+      - file: notebooks/workflows/droughts
+        title: 🏜️ DROUGHTS
+        sections:
+        - file: notebooks/workflows/DROUGHTS/DROUGHTS_notebook_2
+          title: Simple workflow
+        - file: notebooks/workflows/DROUGHTS/DROUGHTS_notebook_1
+          title: Advanced workflow
+      - file: notebooks/workflows/HEATWAVES/HEATWAVES_notebook
+        title: 🌡️ HEATWAVES
+      - file: notebooks/workflows/FIRE/FIRE_notebook
+        title: 🔥 FIRE
+      - file: notebooks/workflows/SNOW/SNOW_notebook
+        title: ❄️ SNOW
+      - file: notebooks/workflows/STORMS/WIND_raster_LUISA
+        title: 💨 WIND
+  - file: CRA_steps/key_risks/key_risks_assessment
+    title: Key risks assessment
+  - file: CRA_steps/monitoring/monitoring
+    title: Monitoring and Evaluation
+
+- caption: 📚 Resources
+  chapters:
+  - file: resources/definitions
+    title: Risk definition resources
+  - file: resources/datasets
+    title: Datasets
+  - file: resources/useful
+    title: Coding resources
+ 
+- caption: 🙋🏻‍♀️ Join the community
+  chapters:
+  - file: community/engage
+    title: Engage with other regions
+  - file: community/contribute
+    title: Contribute to risk recipes 
