@@ -4,36 +4,33 @@ Introducing the __[CLIMAAX](https://www.climaax.eu)__ handbook - a dedicated gui
 
 Our commitment goes beyond exploring new climate values. We aim to move from data to impacts across sectors, providing actionable guidance to stakeholders.
 
-**Snapshot**
+**Layers of evaluation and quality control**
 
+Perhaps we can introduce the components of EQC here
 ::::{grid}
 :gutter: 3
 
-:::{grid-item-card} 🏆 Seasonal forecasts
+:::{grid-item-card} 🏆 Quality assurance
 TDB
 :::
 
-:::{grid-item-card} 🧭 Climate projections
+:::{grid-item-card} 🧭 Quality assessments (this Jupyterbook)
 TDB
 :::
 
-:::{grid-item-card} 🤲 Satellite observations
-TDB
-:::
-::::
-
-::::{grid}
-:gutter: 2
-
-:::{grid-item-card} 🎓 In-situ observations
-TDB
-:::
-
-:::{grid-item-card} 🧠 Reanalysis
+:::{grid-item-card} 🤲 Fitness for purpose
 TDB
 :::
 ::::
 
+**Quality assessments**
 
+More detail on quality assessments here, then links to a landing page for each data stream.
+
+1. Satellite observations
+2. Insitu observations
+3. Reanalysis
+4. Seasonal forecasts
+5. Climate projections
 
 
