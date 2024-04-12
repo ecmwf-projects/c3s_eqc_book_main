@@ -28,6 +28,8 @@ parts:
   chapters:
   - file: seasonal/seasonal.md
     title: Quality assessments for Seasonal Forecasts
+  - file: seasonal/test_seasonal_bias
+    title: Risk assessment in agriculture - Seasonal forecast bias
 
 - caption: ➡️ Climate Projections
   chapters:
