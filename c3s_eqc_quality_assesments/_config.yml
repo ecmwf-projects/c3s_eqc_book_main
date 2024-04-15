@@ -8,7 +8,7 @@
 title                       : eqcbook  # The title of the book. Will be placed in the left navbar.
 author                      : ECMWF, C3S  # The author of the book
 copyright                   : "2024"  # Copyright year to be placed in the footer
-logo                        : logo.png  # A path to the book logo
+logo                        : branding/C3S-POS-LINE.png  # A path to the book logo
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -26,17 +26,16 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/CLIMAAX/crabook  # Online location of your book
+  url: https://github.com/ecmwf-projects/c3s_eqc_book_main/c3s_eqc_quality_assesments  # Online location of your book
   path_to_book: crabook  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: https://www.climaax.eu/wp-content/uploads/2023/03/cropped-Climaax_logo_singolo-32x32.png
   use_issues_button: true
   use_repository_button: true
-  announcement: "⚠️This is the first operational version of the handobok, but it is still a work in progress and will be heavily updated during 2024!⚠️"
+  announcement: "⚠️This is under development!⚠️"
 
 # Do not include these files in the build
 exclude_patterns: [content.md, "**.ipynb_checkpoints", "**README.md"] 
