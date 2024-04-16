@@ -1,0 +1,37 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: About this Jupyterbook 
+  chapters:
+  - file: about
+    title: The C3S EQC quality assessments
+
+- caption: ➡️ Satellite Observations
+  chapters:
+  - file: satellite/satellite.md
+    title: Quality assessments for Satellite Observations
+    
+- caption: ➡️ Insitu Observations
+  chapters:
+  - file: insitu/insitu.md
+    title: Quality assessments for Insitu Observations
+
+- caption: ➡️ Reanalysis
+  chapters:
+  - file: reanalysis/reanalysis.md
+    title: Quality assessments for Reanalysis
+
+- caption: ➡️ Seasonal Forecasts
+  chapters:
+  - file: seasonal/seasonal.md
+    title: Quality assessments for Seasonal Forecasts
+  - file: seasonal/test_seasonal_bias
+    title: Risk assessment in agriculture - Seasonal forecast bias
+
+- caption: ➡️ Climate Projections
+  chapters:
+  - file: projections/projections.md
+    title: Quality assessments for Climate Projections
