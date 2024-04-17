@@ -13,25 +13,35 @@ parts:
   chapters:
   - file: satellite/satellite.md
     title: Quality assessments for Satellite Observations
+    # Manually list all notebooks to be rendered here in sections (appears as collapsable)
+    #sections:
     
 - caption: ➡️ Insitu Observations
   chapters:
   - file: insitu/insitu.md
     title: Quality assessments for Insitu Observations
+    # Manually list all notebooks to be rendered here in sections (appears as collapsable)
+    #sections:
 
 - caption: ➡️ Reanalysis
   chapters:
   - file: reanalysis/reanalysis.md
     title: Quality assessments for Reanalysis
+    # Manually list all notebooks to be rendered here in sections (appears as collapsable)
+    #sections:
 
 - caption: ➡️ Seasonal Forecasts
   chapters:
   - file: seasonal/seasonal.md
     title: Quality assessments for Seasonal Forecasts
-  - file: seasonal/test_seasonal_bias
-    title: Risk assessment in agriculture - Seasonal forecast bias
+    # Manually list all notebooks to be rendered here in sections (appears as collapsable)
+    sections:
+      - file: seasonal/test_seasonal_bias
+        title: Risk assessment in agriculture - Seasonal forecast bias
 
 - caption: ➡️ Climate Projections
   chapters:
   - file: projections/projections.md
     title: Quality assessments for Climate Projections
+    # Manually list all notebooks to be rendered here in sections (appears as collapsable)
+    #sections:
