@@ -5,7 +5,7 @@
 . ./developer/create-environment-for-build
 ```
 
-## Rebuild jupyter book
+## Rebuild jupyter book from directory with toc
 
 ```
 rm -rf _build
