@@ -1,3 +1,5 @@
+![logo](./img/LogoLine_horizon_C3S.png)
+
 # C3S EQC quality assessments
 
 Introducing the.....
