@@ -5,6 +5,8 @@ The individual quality assessments produced by the EQC evaluators, and the use c
 
 Table option:
 
+## Available assessments
+
 :::{list-table} Seasonal quality assessments
 :widths: 35 35 35 35 
 :header-rows: 1
@@ -26,6 +28,8 @@ Table option:
 :::
 
 Table of contents options (no maintenance, but can't customise):
+
+## Available assessments
 
 ```{tableofcontents}
 ```
