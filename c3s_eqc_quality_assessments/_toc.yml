@@ -36,10 +36,10 @@ parts:
     title: Quality assessments for Seasonal Forecasts
     # Manually list all notebooks to be rendered here in sections (appears as collapsable)
     sections:
-      - file: seasonal/test_seasonal_bias
-        title: Risk assessment in agriculture - Seasonal forecast bias
-      - file: seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_UPDATE
-        title: Delivered bias template transformed to template
+      - file: seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8
+        title: Seasonal forecasts bias assessment for impact models (delivered)
+      - file: seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1
+        title: Seasonal forecasts bias assessment for impact models (on template)
 
 - caption: ➡️ Climate Projections
   chapters:
