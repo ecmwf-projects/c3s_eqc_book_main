@@ -4,10 +4,6 @@
 format: jb-book
 root: intro
 parts:
-# - caption: About this Jupyterbook 
-#   chapters:
-#   - file: about
-#     title: The C3S EQC quality assessments
 
 - caption: ➡️ Satellite Observations
   chapters:
