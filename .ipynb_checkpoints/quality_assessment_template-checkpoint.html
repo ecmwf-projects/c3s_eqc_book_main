@@ -460,32 +460,25 @@ document.write(`
 <li><p><strong>In most cases there should be one question listed here in bold</strong></p></li>
 <li><p><strong>In some cases a second question may be included</strong></p></li>
 </ul>
-<p>‘Context’ (no title/heading)- a very short introduction before the assessment statement describing approach taken to answer the user questions. One or two key references could be useful,  if the assessment summarises literature (referenced directly in the text, or with numerical labels like this: <a class="reference external" href="https://www.nature.com/articles/s41598-018-20628-2">[1]</a>).</p>
+<p>‘Context’ (no title/heading)- a very short introduction before the assessment statement describing approach taken to answer the user questions. One or two key references could be useful, particularly if the assessment summarises literature (referenced directly in the text, or with numerical labels like this: <a class="reference external" href="https://www.nature.com/articles/s41598-018-20628-2">[1]</a>).</p>
 </section>
 <section id="quality-assessment-statement">
 <h2>Quality assessment statement<a class="headerlink" href="#quality-assessment-statement" title="Link to this heading">#</a></h2>
-<p>Key results and guidance including an answer to the user question - to be visually highlighted and with the title ‘Quality assessment statement’. This is the code:</p>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{admonition} These are the key outcomes of this assessment
-<span class="k">*</span><span class="w"> </span>Statement 1
-<span class="k">*</span><span class="w"> </span>Statement 2
-<span class="k">*</span><span class="w"> </span>Statement 3
-<span class="k">*</span><span class="w"> </span>etc
-```
-</pre></div>
+<p>Key results and guidance including an answer to the user question - to be visually highlighted and with the title ‘Quality assessment statement’.</p>
+<div class="admonition-this-is-a-title admonition">
+<p class="admonition-title">This is a title</p>
+<p>An example of an admonition with a title.</p>
 </div>
-<p>This is the outcome, which will render properly in the Jupyter Book:</p>
-<div class="admonition-these-are-the-key-outcomes-of-this-assessment admonition">
-<p class="admonition-title">These are the key outcomes of this assessment</p>
 <ul class="simple">
 <li><p>Statement 1</p></li>
 <li><p>Statement 2</p></li>
 <li><p>Statement 3</p></li>
 <li><p>etc</p></li>
 </ul>
-</div>
-<p>A ‘key figure’ could be included if appropriate (think of this as a ‘graphical abstract’, that may also be used as a thumbnail in the CDS or Jupyterbook). Since this image (or any other embedded image) is not generated directly from code, it needs to be saved externally and provided with the Notebook. There is an option for images to be dragged and dropped from an external file browser into the markdown cell (the image is then encoded with Base64, and no external file is needed - but this may not work universally or always render properly in a Jupyter Book - avoid this for now!).</p>
+<p><strong>A ‘key figure’ could be included if appropriate</strong> (think of this as a ‘graphical abstract’, that may also be used as a thumbnail in the CDS or Jupyterbook). Since this image (or any other embedded image) is not generated directly from code, it needs to be saved externally and provided with the Notebook. There is an option for images to be dragged and dropped from an external file browser into the markdown cell (the image is then encoded with Base64, and no external file is needed - but this may not work universally or always render properly in a Jupyter Book - avoid this for now!).</p>
 <p><strong>Note: if the assessment does not include code (a literature review, paper or PQAR summary, etc), then this template can followed as a markdown (.md) rather than Notebook (.pynb) file. In this case attaching images to cells might work (without the local file).</strong></p>
-<p>Basic markdown test <code class="docutils literal notranslate"><span class="pre">![Test</span> <span class="pre">image](test_img.png)</span></code> (but no formatting options, so the image must be the right size):</p>
+<p>Some options for embedding the figure:</p>
+<p>Basic markdown test <code class="docutils literal notranslate"><span class="pre">![Test</span> <span class="pre">image](test_img.png)</span></code> (but no formatting options, so the image must be the right size, unlike here!):</p>
 <p><img alt="Test image" src="_images/test_img.png" /></p>
 <p>Simple alternative with html <code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;test_img.png&quot;</span> <span class="pre">width=&quot;300px&quot;&gt;</span></code> (width controlled via width=”300px” as needed):</p>
 <a class="reference internal image-reference" href="_images/test_img.png"><img alt="_images/test_img.png" src="_images/test_img.png" style="width: 300px;" /></a>
@@ -643,7 +636,7 @@ Here is my figure caption!
 <h2>If you want to know more<a class="headerlink" href="#if-you-want-to-know-more" title="Link to this heading">#</a></h2>
 <section id="key-resources">
 <h3>Key resources<a class="headerlink" href="#key-resources" title="Link to this heading">#</a></h3>
-<p>List some key resources related to this assessment. E.g. CDS entries, applications, dataset documentation, external pages.</p>
+<p>List some key resources related to this assessment. E.g. CDS entries, applications, dataset documentation, external pages, C3S data turorials, other related notebooks.</p>
 <p>Code libraries used:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/bopen/c3s-eqc-automatic-quality-control/tree/main/c3s_eqc_automatic_quality_control">C3S EQC custom functions</a>, <code class="docutils literal notranslate"><span class="pre">c3s_eqc_automatic_quality_control</span></code>,  prepared by <a class="reference external" href="https://www.bopen.eu/">BOpen</a></p></li>
