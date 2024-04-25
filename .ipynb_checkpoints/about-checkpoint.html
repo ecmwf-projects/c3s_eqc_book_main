@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>The CLIMAAX project &#8212; eqcbook</title>
+    <title>The C3S EQC quality assessments &#8212; eqcbook</title>
   
   
   
@@ -42,7 +42,7 @@
   <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -57,16 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
-    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy/about.4fb405cb-546f-4d7e-97c2-fee9d57788d0.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'about';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="author" title="About these documents" href="#" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Satellite" href="satellite/satellite.html" />
-    <link rel="prev" title="CLIMAAX Handbook" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -134,6 +128,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -183,15 +179,11 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    CLIMAAX Handbook
+                    C3S EQC quality assessments
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About this Jupyterbook</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">C3S EQC activity</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Satellite Observations</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Satellite Observations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="satellite/satellite.html">Quality assessments for Satellite Observations</a></li>
 </ul>
@@ -205,12 +197,19 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Seasonal Forecasts</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="seasonal/seasonal.html">Quality assessments for Seasonal Forecasts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="seasonal/test_seasonal_bias.html">Risk assessment in agriculture - Seasonal forecast bias</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="seasonal/seasonal.html">Quality assessments for Seasonal Forecasts</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8.html">Risk assessment in agriculture - Seasonal forecast bias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1.html">Delivered bias assessment transformed to template</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Climate Projections</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="projections/projections.html">Quality assessments for Climate Projections</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assessment template</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="quality_assessment_template.html">Quality assessments template for evaluators</a></li>
 </ul>
 
     </div>
@@ -265,7 +264,7 @@
       
       
       
-      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/c3s_eqc_quality_assesments" target="_blank"
+      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -282,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/c3s_eqc_quality_assesments/issues/new?title=Issue%20on%20page%20%2Fabout.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/issues/new?title=Issue%20on%20page%20%2Fabout.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -383,9 +382,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -396,19 +393,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>The CLIMAAX project</h1>
+    <h1>The C3S EQC quality assessments</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-a-nutshell">In a nutshell</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -418,24 +407,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="the-climaax-project">
-<h1>The CLIMAAX project<a class="headerlink" href="#the-climaax-project" title="Link to this heading">#</a></h1>
-<p>CLIMAte risk and vulnerability Assessment framework and toolboX (CLIMAAX) is a 4-year Horizon Europe project that provides financial, analytical, and practical support to improve regional climate and emergency risk management plans. CLIMAAX is designed to contribute to the harmonization and consolidation of the practice of climate risk assessment, leaving a legacy for upcoming European initiatives while turning the European Commission Climate Change Mission on Adaptation. The project started in January 2023 and runs until December 2026.</p>
-<section id="in-a-nutshell">
-<h2>In a nutshell<a class="headerlink" href="#in-a-nutshell" title="Link to this heading">#</a></h2>
-<p>The European landscape of disaster risk management and climate adaptation is far from uniform.</p>
-<p>CLIMAAX builds upon existing risk assessment frameworks, methods and tools, and promotes the use of datasets and service platforms for local and regional scale deployment. It develops a robust and coordinated framework of consistent, harmonised and comparable risk assessments.</p>
-<p>The project takes the existing tools and services beyond the state-of-the-art by prioritizing the further development of accessibility, guidance, tuning to local contexts, interpretation and uptake by representative Disaster Risk Management and Civil Protection authorities.</p>
-<p>CLIMAAX is designed to significantly contribute to the harmonization and consolidation of the practice of climate risk assessment (CRA) by providing:</p>
-<ol class="arabic simple">
-<li><p>A standardized <abbr title="Climate Risk Assessment">CRA</abbr> framework built on current community experience and best-practices.</p></li>
-<li><p>A toolbox for conducting risk analyses, which hosts data, models and utilities and provides access to European and global open data archives integrated with local data and procedures.</p></li>
-<li><p>Five European pilot regional <abbr title="Climate Risk Assessment">CRA</abbr>s to shape the framework and toolset.</p></li>
-<li><p>Financial support for at least 50 regions to execute a context specific <abbr title="Climate Risk Assessment">CRA</abbr>.</p></li>
-<li><p><abbr title="Climate Risk Assessment">CRA</abbr> guidance material and online helpdesk for other European regions.</p></li>
-<li><p>A proposal to upscale results into the future operationalization of the regional <abbr title="Climate Risk Assessment">CRA</abbr> support function.</p></li>
-</ol>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="the-c3s-eqc-quality-assessments">
+<h1>The C3S EQC quality assessments<a class="headerlink" href="#the-c3s-eqc-quality-assessments" title="Link to this heading">#</a></h1>
+<p>Not used in table of contents at the moment (_toc.yml).</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -468,24 +442,6 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">CLIMAAX Handbook</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="satellite/satellite.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Satellite</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -493,20 +449,7 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-a-nutshell">In a nutshell</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>

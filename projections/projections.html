@@ -42,7 +42,7 @@
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
@@ -57,15 +57,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
-    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="../_static/tippy/projections/projections.0c4b87d3-6ac3-459c-b078-e5129773a51d.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'projections/projections';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models." href="../seasonal/test_seasonal_bias.html" />
+    <link rel="next" title="Unique quality assessment title (to be finalised by C3S), including [data stream]-[quality area]-for-[application area]" href="../quality_assessment_template.html" />
+    <link rel="prev" title="Seasonal forecasts bias assessment for impact models" href="../seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -186,11 +183,7 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About this Jupyterbook</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../about.html">The C3S EQC quality assessments</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Satellite Observations</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Satellite Observations</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../satellite/satellite.html">Quality assessments for Satellite Observations</a></li>
 </ul>
@@ -204,12 +197,19 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Seasonal Forecasts</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../seasonal/seasonal.html">Quality assessments for Seasonal Forecasts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../seasonal/test_seasonal_bias.html">Risk assessment in agriculture - Seasonal forecast bias</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seasonal/seasonal.html">Quality assessments for Seasonal Forecasts</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8.html">Risk assessment in agriculture - Seasonal forecast bias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1.html">Delivered bias assessment transformed to template</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Climate Projections</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Quality assessments for Climate Projections</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assessment template</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../quality_assessment_template.html">Quality assessments template for evaluators</a></li>
 </ul>
 
     </div>
@@ -264,7 +264,7 @@
       
       
       
-      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/c3s_eqc_quality_assesments" target="_blank"
+      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/c3s_eqc_quality_assesments/issues/new?title=Issue%20on%20page%20%2Fprojections/projections.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/issues/new?title=Issue%20on%20page%20%2Fprojections/projections.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -443,13 +443,22 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../seasonal/test_seasonal_bias.html"
+       href="../seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models.</p>
+        <p class="prev-next-title">Seasonal forecasts bias assessment for impact models</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="../quality_assessment_template.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unique quality assessment title (to be finalised by C3S), including [data stream]-[quality area]-for-[application area]</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
