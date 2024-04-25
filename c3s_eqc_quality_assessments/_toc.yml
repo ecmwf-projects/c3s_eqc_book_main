@@ -38,6 +38,8 @@ parts:
     sections:
       - file: seasonal/test_seasonal_bias
         title: Risk assessment in agriculture - Seasonal forecast bias
+      - file: seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_UPDATE
+        title: Delivered bias template transformed to template
 
 - caption: ➡️ Climate Projections
   chapters:
@@ -45,3 +47,9 @@ parts:
     title: Quality assessments for Climate Projections
     # Manually list all notebooks to be rendered here in sections (appears as collapsable)
     #sections:
+    
+- caption: Assessment template
+  chapters:
+  - file: quality_assessment_template.ipynb
+    title: Quality assessments template for evaluators
+
