@@ -473,7 +473,7 @@ document.write(`
 ```
 </pre></div>
 </div>
-<p>This is the outcome, which will render properly in the Jupyter Book:</p>
+<p>This is the outcome, which will render properly in the Jupyter Book in  blue box with bell icon:</p>
 <div class="admonition-these-are-the-key-outcomes-of-this-assessment admonition">
 <p class="admonition-title">These are the key outcomes of this assessment</p>
 <ul class="simple">
@@ -483,15 +483,22 @@ document.write(`
 <li><p>etc</p></li>
 </ul>
 </div>
+<p>A second option is to simply format the section with <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, giving:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Statement 1</p></li>
+<li><p>Statement 2</p></li>
+<li><p>Statement 3</p></li>
+<li><p>etc</p></li>
+</ul>
+</div></blockquote>
 <p>A ‘key figure’ could be included if appropriate (think of this as a ‘graphical abstract’, that may also be used as a thumbnail in the CDS or Jupyterbook). Since this image (or any other embedded image) is not generated directly from code, it needs to be saved externally and provided with the Notebook. There is an option for images to be dragged and dropped from an external file browser into the markdown cell (the image is then encoded with Base64, and no external file is needed - but this may not work universally or always render properly in a Jupyter Book - avoid this for now!).</p>
 <p><strong>Note: if the assessment does not include code (a literature review, paper or PQAR summary, etc), then this template can followed as a markdown (.md) rather than Notebook (.pynb) file. In this case attaching images to cells might work (without the local file).</strong></p>
 <p>Basic markdown test <code class="docutils literal notranslate"><span class="pre">![Test</span> <span class="pre">image](test_img.png)</span></code> (but no formatting options, so the image must be the right size):</p>
 <p><img alt="Test image" src="_images/test_img.png" /></p>
 <p>Simple alternative with html <code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;test_img.png&quot;</span> <span class="pre">width=&quot;300px&quot;&gt;</span></code> (width controlled via width=”300px” as needed):</p>
 <a class="reference internal image-reference" href="_images/test_img.png"><img alt="_images/test_img.png" src="_images/test_img.png" style="width: 300px;" /></a>
-<p>Or centered if needed <code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;test_img.png&quot;</span> <span class="pre">width=&quot;300px&quot;</span> <span class="pre">style=&quot;display:</span> <span class="pre">block;</span> <span class="pre">margin:</span> <span class="pre">auto;&quot;&gt;</span></code>:</p>
-<a class="reference internal image-reference" href="_images/test_img.png"><img alt="_images/test_img.png" src="_images/test_img.png" style="width: 300px;" /></a>
-<p>This MyST MD option allows a figure caption to be added, but will not render properly in all Jupyter viewers but works when the Jupyter book is built!</p>
+<p>This MyST MD option allows a figure caption to be added and the image centered, but will not render properly in all Jupyter viewers but works when the Jupyter book is built!</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">```{figure} test_img.png</span>
 <span class="gu">---</span>
 height: 150px
