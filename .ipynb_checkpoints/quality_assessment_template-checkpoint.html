@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -467,8 +467,7 @@ document.write(`
 <section id="quality-assessment-statement">
 <h2>Quality assessment statement<a class="headerlink" href="#quality-assessment-statement" title="Link to this heading">#</a></h2>
 <p>Key results and guidance including an answer to the user question - to be visually highlighted and with the title ‘Quality assessment statement’. This is the code:</p>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{admonition} These are the key outcomes of this assessment
-:class: note
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{note} These are the key outcomes of this assessment
 <span class="k">*</span><span class="w"> </span>Statement 1
 <span class="k">*</span><span class="w"> </span>Statement 2
 <span class="k">*</span><span class="w"> </span>Statement 3
@@ -476,9 +475,10 @@ document.write(`
 ```
 </pre></div>
 </div>
-<p>This is the outcome, which will render properly in the Jupyter Book in  blue box with an info icon:</p>
-<div class="note admonition">
-<p class="admonition-title">These are the key outcomes of this assessment</p>
+<p>This is the outcome, which will render properly in the Jupyter Book in  blue box with a box and icon icon:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These are the key outcomes of this assessment</p>
 <ul class="simple">
 <li><p>Statement 1</p></li>
 <li><p>Statement 2</p></li>
@@ -486,6 +486,15 @@ document.write(`
 <li><p>etc</p></li>
 </ul>
 </div>
+<p>A second option is to simply format the section with <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, giving:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Statement 1</p></li>
+<li><p>Statement 2</p></li>
+<li><p>Statement 3</p></li>
+<li><p>etc</p></li>
+</ul>
+</div></blockquote>
 <p>A ‘key figure’ could be included if appropriate (think of this as a ‘graphical abstract’, that may also be used as a thumbnail in the CDS or Jupyterbook). Since this image (or any other embedded image) is not generated directly from code, it needs to be saved externally and provided with the Notebook. There is an option for images to be dragged and dropped from an external file browser into the markdown cell (the image is then encoded with Base64, and no external file is needed - but this may not work universally or always render properly in a Jupyter Book - avoid this for now!).</p>
 <p><strong>Note: if the assessment does not include code (a literature review, paper or PQAR summary, etc), then this template can followed as a markdown (.md) rather than Notebook (.pynb) file. In this case attaching images to cells might work (without the local file).</strong></p>
 <p>Basic markdown test <code class="docutils literal notranslate"><span class="pre">![Test</span> <span class="pre">image](test_img.png)</span></code> (but no formatting options, so the image must be the right size):</p>
