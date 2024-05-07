@@ -36,6 +36,8 @@ parts:
         title: Seasonal forecasts bias assessment for impact models (delivered by evaluator)
       - file: seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1
         title: Seasonal forecasts bias assessment for impact models (converted to template)
+      - file: seasonal/uncertainty
+        title: Seasonal forecasts uncertainty example (delivered by evaluator)
 
 - caption: ➡️ Climate Projections
   chapters:
