@@ -44,13 +44,13 @@ parts:
   - file: projections/projections.md
     title: Quality assessments for Climate Projections
     # Manually list all notebooks to be rendered here in sections (appears as collapsable)
-    sections:
-      - file: projections/UC1_historical_CMIP6_extreme_temperature_indices
-        title: Extreme temperature indices from CMIP6 - historical
-      - file: projections/UC1_future_trend_CMIP6_extreme_temperature_indices
-        title: Extreme temperature indices from CMIP6 - future trends
-      - file: projections/UC1_GWL_CMIP6_extreme_temperature_indices
-        title: Extreme temperature indices from CMIP6 - GWL
+    # sections:
+      # - file: projections/UC1_historical_CMIP6_extreme_temperature_indices
+      #   title: Extreme temperature indices from CMIP6 - historical
+      # - file: projections/UC1_future_trend_CMIP6_extreme_temperature_indices
+      #   title: Extreme temperature indices from CMIP6 - future trends
+      # - file: projections/UC1_GWL_CMIP6_extreme_temperature_indices
+      #   title: Extreme temperature indices from CMIP6 - GWL
 
 - caption: Assessment template
   chapters:
