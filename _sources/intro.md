@@ -8,7 +8,8 @@ C3S has established an EQC framework for all its products and services to ensure
 
 ## Layers of evaluation and quality control
 
-The components of evalution and quality control performed in C3S2_520 are
+The revised EQC framework makes a distinction between quality assurance, quality assessment and fitness for purpose. 
+
 ::::{grid}
 :gutter: 3
 
@@ -25,7 +26,7 @@ deciding whether data is suitable for a particular use
 :::
 ::::
 
-**Quality assurance** serves to inform users that data, metadata and documentation comply with a well-defined set of verifiable technical requirements. It provides evidence that this compliance has been checked independently from the producers. Quality assurance for each CDS dataset is implemented by verifying a set of well-defined technical requirements associated with the dataset. Specific assessment criteria for the respective data streams (e.g. reanalysis, projections) are developed to account for the different nature of these and the different types of checks that may have to be applied to verify the requirement. The role of EQC evaluators is to check these criteria and document the outcome to users. 
+In more detail, **Quality assurance** serves to inform users that data, metadata and documentation comply with a well-defined set of verifiable technical requirements. It provides evidence that this compliance has been checked independently from the producers. Quality assurance for each CDS dataset is implemented by verifying a set of well-defined technical requirements associated with the dataset. Specific assessment criteria for the respective data streams (e.g. reanalysis, projections) are developed to account for the different nature of these and the different types of checks that may have to be applied to verify the requirement. The role of EQC evaluators is to check these criteria and document the outcome to users. 
 
 The purpose of **quality assessments**, on the other hand, is to provide science-based information about accuracy, uncertainties, sources of uncertainty, temporal consistency, strengths, and weaknesses of a dataset in the context of a realistic use cases. 
 
