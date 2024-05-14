@@ -17,11 +17,11 @@ data quality checks against key requirements
 :::
 
 :::{grid-item-card} 🧭 Quality assessments
-scientific assessments which answer user questions (this Jupyterbook)
+scientific assessments which answer user questions
 :::
 
 :::{grid-item-card} 🏆 Fitness for purpose
-deciding if the data is suitable for a particular use
+deciding whether data is suitable for a particular use
 :::
 ::::
 
