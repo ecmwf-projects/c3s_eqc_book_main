@@ -54,6 +54,8 @@ parts:
 
 - caption: Assessment template
   chapters:
-  - file: quality_assessment_template.ipynb
+  - file: quality_assessment_template_SIMPLE.ipynb
     title: Quality assessments template for evaluators
+  - file: quality_assessment_template_JUPYTERBOOK.ipynb
+    title: Quality assessments template for conversion to the Jupyter Book format
 
