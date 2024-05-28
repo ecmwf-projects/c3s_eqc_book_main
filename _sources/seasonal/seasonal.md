@@ -3,9 +3,15 @@
 Seasonal forecasts
 =======================
 
-The individual quality assessments produced by the EQC evaluators, and the use cases and user questions they address, are listed and linked below.
+The individual quality assessments produced by the EQC evaluators are listed and linked below.
 
-Table option:
+
+## Available assessments
+
+```{tableofcontents}
+```
+
+<!-- Table option:
 
 ## Available assessments
 
@@ -27,7 +33,7 @@ Table option:
     - __[Seasonal forecast monthly statistics on single levels](https://cds.climate.copernicus.eu/cdsapp#!/dataset/seasonal-monthly-single-levels?tab=overview)__
 
 
-:::
+::: -->
 
 <!-- Table of contents options (no maintenance, but can't customise):
 

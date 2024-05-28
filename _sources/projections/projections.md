@@ -3,7 +3,13 @@
 Climate projections
 =======================
 
-The individual quality assessments produced by the external evaluators, and the use cases and user questions they address, are listed and linked below.
+The individual quality assessments produced by the EQC evaluators are listed and linked below.
+
+
+## Available assessments
+
+```{tableofcontents}
+```
 
 ```{note}
 Content coming soon.
