@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -197,8 +197,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Seasonal Forecasts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="seasonal/seasonal.html">Quality assessments for Seasonal Forecasts</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8.html">Seasonal forecasts bias assessment for impact models (delivered by evaluator)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1.html">Seasonal forecasts bias assessment for impact models (converted to template)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1.html">Seasonal forecasts bias assessment for impact models</a></li>
 </ul>
 </li>
 </ul>
@@ -208,8 +207,8 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assessment template</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quality assessments template for evaluators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quality_assessment_template_JUPYTERBOOK.html">Quality assessments template for conversion to the Jupyter Book format</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quality assessment template for evaluators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quality_assessment_template_JUPYTERBOOK.html">Quality assessment template for conversion to the Jupyter Book format</a></li>
 </ul>
 
     </div>
@@ -449,12 +448,13 @@ document.write(`
                 <article class="bd-article">
                   
   <div class="alert alert-block alert-warning">
-Example: Note, in this template the banner images, and Jupyter Book specific markdown are removed.
+Note, in this template the banner images, and Jupyter Book specific markdown are removed.
 </div>
-<p><strong>Note: if the assessment does not include code (a literature review, paper or PQAR summary, etc), then this template can followed as a (.pynb) file, without any code cells and only embedded images.</strong></p>
-<section class="tex2jax_ignore mathjax_ignore" id="unique-quality-assessment-title-to-be-finalised-by-c3s-including-data-stream-quality-area-application-area">
+<div class="alert alert-block alert-warning">
+Note: if the assessment does not include code (a literature review, paper or PQAR summary, etc), then this template can followed as a (.pynb) file, without any code cells and only embedded images.
+</div><section class="tex2jax_ignore mathjax_ignore" id="unique-quality-assessment-title-to-be-finalised-by-c3s-including-data-stream-quality-area-application-area">
 <h1>Unique quality assessment title (to be finalised by C3S), including [data stream]-[quality area]-[application area]<a class="headerlink" href="#unique-quality-assessment-title-to-be-finalised-by-c3s-including-data-stream-quality-area-application-area" title="Link to this heading">#</a></h1>
-<p>At the stage, we do not aim to be completely prescriptive about the title, it should be readable and descriptive, but also include some key tags to increase searchability, e.g. <em>Seasonal forecasts bias assessment for impact models</em></p>
+<p>We do not aim to be completely prescriptive about the title, it should be readable and descriptive, but also include some key tags to increase searchability, e.g. <em>Seasonal forecasts bias assessment for impact models</em></p>
 <ul class="simple">
 <li><p>Data stream: Satellite (observations), Insitu (observations), Reanalysis, Seasonal (Forecasts), Climate (projections)</p></li>
 <li><p>Quality area: bias, forecast skill, completeness, intercomparison of X and Y, comparison to X, trend assessment, extremes, spatial/temporal resolution, reliability, accuracy, etc</p></li>
@@ -470,9 +470,9 @@ Example: Note, in this template the banner images, and Jupyter Book specific mar
 <h2>Quality assessment question(s)<a class="headerlink" href="#quality-assessment-question-s" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>In most cases there should be one question listed here in bold</strong></p></li>
-<li><p><strong>In some cases a second question may be included</strong></p></li>
+<li><p><strong>In some cases a second related/follow-up question may be included</strong></p></li>
 </ul>
-<p>‘Context’ (no title/heading)- a very short introduction before the assessment statement describing approach taken to answer the user questions. One or two key references could be useful,  if the assessment summarises literature (referenced directly in the text, or with numerical labels like this (also listed at the end) <code class="docutils literal notranslate"><span class="pre">[[1]](https://www.nature.com/articles/s41598-018-20628-2))</span></code>giving: <a class="reference external" href="https://www.nature.com/articles/s41598-018-20628-2">[1]</a>).</p>
+<p><strong>‘Context’ (no title/heading)</strong> - a very short introduction before the assessment statement describing approach taken to answer the user questions. One or two key references could be useful,  if the assessment summarises literature (referenced directly in the text, or with numerical labels like this (also listed at the end) <code class="docutils literal notranslate"><span class="pre">[[1]](https://www.nature.com/articles/s41598-018-20628-2))</span></code>giving: <a class="reference external" href="https://www.nature.com/articles/s41598-018-20628-2">[1]</a>).</p>
 </section>
 <section id="quality-assessment-statement">
 <h2>Quality assessment statement<a class="headerlink" href="#quality-assessment-statement" title="Link to this heading">#</a></h2>
@@ -483,19 +483,19 @@ Example: Note, in this template the banner images, and Jupyter Book specific mar
 <li><p>Statement 3</p></li>
 <li><p>etc</p></li>
 </ul>
-<p>A <strong>‘key figure’</strong> could be included if appropriate (think of this as a ‘graphical abstract’, that may also be used as a thumbnail in the CDS or Jupyterbook). Since this image (or any other embedded image) is not generated directly from code, it needs to be saved externally and provided with the Notebook (in these examples ‘test_img.png’ in in the same folder), or embedded (this is best for delivering the Notebook as one file), this will look like: <code class="docutils literal notranslate"><span class="pre">![test_img.png](attachment:4cf358c8-5758-431e-bf74-dc6fdcc4e88f.png)</span></code>.</p>
+<p>A <strong>‘key figure’</strong> could be included if appropriate (think of this as a ‘graphical abstract’, that may also be used as a thumbnail in the CDS or Jupyter Book). Since this image (or any other embedded image) is not generated directly from code, it needs to be saved externally and provided with the Notebook (in these examples ‘test_img.png’ in in the same folder), or embedded (this is best for delivering the Notebook as one file), this will look like: <code class="docutils literal notranslate"><span class="pre">![test_img.png](attachment:4cf358c8-5758-431e-bf74-dc6fdcc4e88f.png)</span></code>.</p>
 <p>There is an option for images to be dragged and dropped from an external file browser into the markdown cell in most Jupyter editors. The image is then encoded with Base64, and no external file is needed - but this may not work universally or always render properly in a Jupyter Book. At the publication step this will be solved.</p>
 <p>Basic markdown image <code class="docutils literal notranslate"><span class="pre">![Test</span> <span class="pre">image](test_img.png)</span></code> (but no formatting options, so the image must be the right size):</p>
 <p><img alt="Test image" src="_images/test_img.png" /></p>
 <p>Simple alternative with html <code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;test_img.png&quot;</span> <span class="pre">width=&quot;300px&quot;&gt;</span></code> (width controlled via width=”300px” as needed, to use an attachment, relace the test_img.png with the ‘attachment:…’):</p>
 <a class="reference internal image-reference" href="_images/test_img.png"><img alt="_images/test_img.png" src="_images/test_img.png" style="width: 300px;" /></a>
 <p><em>Please include a caption below the image in itallics. It should include attribution if it is taken from an external source (if the copyright allows reproduction!).</em></p>
-<p>If needed, proper figure numbering and captioning can be added at publication in the Jupyter Book. If many figures not produced by code are included (literature review wtc), please number the figures manualy at the start of the caption (Fig. 1, 2, 3 etc), reference the source at the end (<code class="docutils literal notranslate"><span class="pre">[Source:</span> <span class="pre">...](link)</span></code>), and just refer to them in the text (without active links).</p>
+<p>If needed, proper figure numbering and captioning can be added at publication in the Jupyter Book. If many figures not produced by code are included (literature review etc), please number the figures manualy at the start of the caption (Fig. 1, 2, 3 etc), reference the source at the end (<code class="docutils literal notranslate"><span class="pre">[Source:</span> <span class="pre">...](link)</span></code>), and just refer to them in the text (without active links).</p>
 </section>
 <section id="methodology">
 <h2>Methodology<a class="headerlink" href="#methodology" title="Link to this heading">#</a></h2>
 <p>A ‘free text’ introduction to the data analysis steps or a description of the literature synthesis, with a justification of the approach taken, and limitations mentioned. <strong>Mention which CDS catalogue entry is used, including a link, and also any other entries used for the assessment</strong>.</p>
-<p>Followed by a numbered list of the methodology and results, with the same headings as the sections under ‘Analysis and Results’. These should be links to the sections below, without the section numbers, using the format <code class="docutils literal notranslate"><span class="pre">[Text</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">displayed](#words-in-heading)</span></code>. <strong>Note that links will not work in the Jupyter Notebook editor, but you can test them in html output</strong>.</p>
+<p>Followed by a numbered list of the methodology and results, with the same headings as the sections under ‘Analysis and Results’. These should be links to the sections below, without the section numbers, using the format <code class="docutils literal notranslate"><span class="pre">[Text</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">displayed](#words-in-heading)</span></code> so below we have <code class="docutils literal notranslate"><span class="pre">[Section</span> <span class="pre">A](#section-a)</span></code>. <strong>Note that links will not work in the Jupyter Notebook editor, but you can test them in html output</strong>.</p>
 <ul class="simple">
 <li><p>These headings can be specific to the quality assessment, and help guide the user through the ‘story’ of the assessment. This means we cannot pre-define the sections and headings here, as they will be different for each assessment.</p></li>
 <li><p>Sub-bullets could be used to outline what will be done/shown/discussed in each section</p></li>
@@ -531,7 +531,7 @@ Example: Note, in this template the banner images, and Jupyter Book specific mar
 <h4>Subsections<a class="headerlink" href="#subsections" title="Link to this heading">#</a></h4>
 <p>Describe what is done in this step/section and what the <code class="docutils literal notranslate"><span class="pre">code</span></code> in the cell does (<strong>if code is included</strong> - some assessment may review literature or reports like PQARs for ECVs, in which case, a markdown file could be provided instead).</p>
 <p><strong>Code:</strong>
-<strong>The code should be collapsed by default</strong> using the cell tag <code class="docutils literal notranslate"><span class="pre">'hide-input'</span></code> (BOpen can check this programatically, and update the cell tags automatically). Note that this will not work in the Notebook editor.</p>
+<strong>The code should be collapsed by default</strong> using the cell tag <code class="docutils literal notranslate"><span class="pre">'hide-input'</span></code> (BOpen can check this programatically, and update the cell tags automatically). Note that this will not work in the Notebook editor, or .ipynb view in Github.</p>
 <p>Cell output should be cleaned up as needed, this can also be done with the <code class="docutils literal notranslate"><span class="pre">'hide-output'</span></code> cell tag.</p>
 <p>Please consider when cell output would be useful to include, such as printing the summary of the xarray data cube.</p>
 <p>Please link to any non-standard libraries in the text when they are imported, including the functions from BOpen (a standard line on this is also inluded in the references section).</p>
@@ -622,7 +622,8 @@ Example: Note, in this template the banner images, and Jupyter Book specific mar
 <h3>5. Section E<a class="headerlink" href="#section-e" title="Link to this heading">#</a></h3>
 <section id="results-subsections">
 <h4>Results Subsections<a class="headerlink" href="#results-subsections" title="Link to this heading">#</a></h4>
-<p>Describe what is done in this step/section and what the <code class="docutils literal notranslate"><span class="pre">code</span></code> in the cell does (if code is included). If this is the <strong>results section</strong>, we expect the final plots to be created here with a description of how to interpret them, and what information can be extracted for the specific use case and user question. The information in the ‘quality assessment statement’ should be derived here.</p>
+<p>Describe what is done in this step/section and what the <code class="docutils literal notranslate"><span class="pre">code</span></code> in the cell does (if code is included).</p>
+<p>If this is the <strong>results section</strong>, we expect the final plots to be created here with a description of how to interpret them, and what information can be extracted for the specific use case and user question. The information in the ‘quality assessment statement’ should be derived here.</p>
 </section>
 </section>
 </section>
