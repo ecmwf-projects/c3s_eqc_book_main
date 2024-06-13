@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models. &#8212; eqcbook</title>
+    <title>Seasonal forecasts bias assessment for impact models &#8212; eqcbook</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -57,9 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seasonal/D520.3.2.3b.SEASONAL_multimodel_bias';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Climate projections" href="../projections/projections.html" />
+    <link rel="prev" title="Seasonal forecasts" href="seasonal.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -127,8 +129,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -195,9 +195,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../reanalysis/reanalysis.html">Quality assessments for Reanalysis</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">➡️ Seasonal Forecasts</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="seasonal.html">Quality assessments for Seasonal Forecasts</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="D520.3.2.3b.SEASONAL_multimodel-bias_v8_Copy1.html">Seasonal forecasts bias assessment for impact models</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="seasonal.html">Quality assessments for Seasonal Forecasts</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Seasonal forecasts bias assessment for impact models</a></li>
 </ul>
 </li>
 </ul>
@@ -280,7 +280,7 @@
       
       
       
-      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/issues/new?title=Issue%20on%20page%20%2Fseasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ecmwf-projects/c3s_eqc_book_main/issues/new?title=Issue%20on%20page%20%2Fseasonal/D520.3.2.3b.SEASONAL_multimodel_bias.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,7 +310,7 @@
       
       
       
-      <li><a href="../_sources/seasonal/D520.3.2.3b.SEASONAL_multimodel-bias_v8.ipynb" target="_blank"
+      <li><a href="../_sources/seasonal/D520.3.2.3b.SEASONAL_multimodel_bias.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -394,7 +394,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models.</h1>
+    <h1>Seasonal forecasts bias assessment for impact models</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -404,21 +404,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-risk-assessment-in-agriculture-using-seasonal-forecasts-as-an-input-for-climate-impact-models">Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-assessment-questions">Quality assessment questions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-assessment-statement">Quality assessment statement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-and-results">Analysis and results</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-data-to-use-and-setup-the-code">1. Choose the data to use and setup the code.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-data-to-use-and-setup-the-code">1. Choose the data to use and setup the code</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#import-required-packages">Import required packages</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#define-parameters-describing-regions-variables-and-data">Define parameters describing regions, variables, and data</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-the-chosen-regions">Plot the chosen regions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#define-the-required-functions">Define the required functions</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5-data-retrieval-and-area-average">2. ERA5 data retrieval and area average`.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seasonal-hindcast-data-retrieval-and-area-average">3. Seasonal hindcast data retrieval and area average`.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5-data-retrieval-and-area-average">2. ERA5 data retrieval and area average</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seasonal-hindcast-data-retrieval-and-area-average">3. Seasonal hindcast data retrieval and area average</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-a-sample-global-map-of-temperature-biases">Show a sample global map of temperature biases</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-bias">4. Compute bias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-the-hindcast-bias">4. Compute the hindcast bias</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-and-describe-results">5. Plot and describe results</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-the-results">How to read the results</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
@@ -426,7 +427,11 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-you-want-to-know-more">If you want to know more</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-resources">Key resources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -438,32 +443,45 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="use-case-risk-assessment-in-agriculture-using-seasonal-forecasts-as-an-input-for-climate-impact-models">
-<h1>Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models.<a class="headerlink" href="#use-case-risk-assessment-in-agriculture-using-seasonal-forecasts-as-an-input-for-climate-impact-models" title="Link to this heading">#</a></h1>
+  <p><img alt="logo" src="../_images/LogoLine_horizon_C3S.png" /></p>
+<section class="tex2jax_ignore mathjax_ignore" id="seasonal-forecasts-bias-assessment-for-impact-models">
+<h1>Seasonal forecasts bias assessment for impact models<a class="headerlink" href="#seasonal-forecasts-bias-assessment-for-impact-models" title="Link to this heading">#</a></h1>
+<p>Production date: 08/03/2024</p>
+<p>Produced by: Sandro Calmanti (ENEA)</p>
+<section id="use-case-risk-assessment-in-agriculture-using-seasonal-forecasts-as-an-input-for-climate-impact-models">
+<h2>Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models.<a class="headerlink" href="#use-case-risk-assessment-in-agriculture-using-seasonal-forecasts-as-an-input-for-climate-impact-models" title="Link to this heading">#</a></h2>
+</section>
 <section id="quality-assessment-questions">
 <h2>Quality assessment questions<a class="headerlink" href="#quality-assessment-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Do I have to correct systematic errors in temperature and precipitation before using seasonal forecasts as an input for my crop model?</p></li>
-<li><p>Can I assume that climate models always produce the same systematic error for seasonal forecasts over a certain area?</p></li>
+<li><p><strong>Do I have to correct systematic errors in temperature and precipitation before using seasonal forecasts as an input for my crop model?</strong></p></li>
+<li><p><strong>Can I assume that climate models always produce the same systematic error for seasonal forecasts over a certain area?</strong></p></li>
 </ul>
 <p>Seasonal forecasts can be used as an input to crop models for agricultural risk assessment <a class="reference external" href="https://www.nature.com/articles/s41598-018-20628-2">[1]</a> <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0168192318303836">[2]</a> <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S2405880722000425">[3]</a>. However, the presence of systematic errors can undermine the performance of crop models in a number of ways, particularly when critical thresholds in the plant growth process are considered. Similar problems can arise in other sectoral applications, such as the management of renewable energy facilities <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0960148119306196">[4]</a>, or the alerting of national health services for the occurrence of summer heat waves <a class="reference external" href="https://link.springer.com/article/10.1007/s00382-021-05828-3">[5]</a>. In addition to temperature and precipitation, the most commonly used climate variables for risk assessment in all sectoral applications, the notebook also considers wind speed and dew point temperature. While these variables are commonly used in agricultural applications to calculate potential evapotranspiration, the results of the assessment are also valuable for several other sectors.</p>
 </section>
 <section id="quality-assessment-statement">
 <h2>Quality assessment statement<a class="headerlink" href="#quality-assessment-statement" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">These are the key outcomes of this assessment</p>
 <ul class="simple">
 <li><p>Seasonal forecasts should be bias-corrected before being used as input to climate impact models. Depending on the impact model, it might be advisable to bias-correct the resulting impact indicator <a class="reference external" href="https://doi.org/10.1175/JHM-D-19-0042.1">[6]</a></p></li>
 <li><p>Model drifts and bias tend to be a complex function of both the start time of the forecast and of its valid time, with a slightly stronger dependence on the valid time for the case of temperature and precipitation. Therefore, the most appropriate approach to produce unbiased forecasts for use in impact models must be selected on a case-by-case basis.<a class="reference external" href="https://link.springer.com/article/10.1007/s00382-019-04640-4">[7]</a> <a class="reference external" href="https://link.springer.com/article/10.1007/s00382-017-3962-9">[8]</a></p></li>
 <li><p>For the implementation of bias correction procedures, it is recommended that reference climatologies are computed for time scales no longer than one month, since the typical model bias changes on a monthly basis. Instead, the correction of model biases on a seasonal (i.e. three months) timescale may lead to a loss of quality.</p></li>
 <li><p>Similarly, the calculation of multi-model statistics requires a recalibration of the model output in order to align all models around the same climatological distribution. <a class="reference external" href="https://link.springer.com/article/10.1007/s00382-020-05314-2">[9]</a></p></li>
 </ul>
-<p><img alt="image.png" src="seasonal/attachment:65ac1e47-560f-45d9-b5eb-eaf0388326cb.png" /></p>
-<p>The figure shows a sample  of the ECMWF monthly temperature bias for Western North America as a function of the starting month and of the valid month of the forecast. More details on how to interpret the results are available below in the notebook.</p>
+</div>
+<figure class="align-default" id="example-figure">
+<a class="reference internal image-reference" href="../_images/seasonal_multimodel_bias_fig1.png"><img alt="../_images/seasonal_multimodel_bias_fig1.png" src="../_images/seasonal_multimodel_bias_fig1.png" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The figure shows a sample  of the ECMWF monthly temperature bias for Western North America as a function of the starting month and of the valid month of the forecast. More details on how to interpret the results are available below in the notebook.</span><a class="headerlink" href="#example-figure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="methodology">
 <h2>Methodology<a class="headerlink" href="#methodology" title="Link to this heading">#</a></h2>
 <p>This notebook provides a comprehensive assessment of the systematic errors of the forecast systems by comparing the model predictions with the ERA5 reanalysis. The analysis is carried out for eight regions selected from those used in the IPCC-AR6 (see figure below), which capture the spatial scale of the main systematic errors already analysed in previous studies <a class="reference external" href="https://link.springer.com/article/10.1007/s00382-019-04640-4">[10]</a></p>
 <p>The analysis and results are organised in the following steps, which are detailed in the sections below:</p>
-<p><strong>1. Choose the data to use and setup code:</strong></p>
+<p><strong>1. <a class="reference internal" href="#choose-the-data-to-use-and-setup-the-code"><span class="xref myst">Choose the data to use and setup the code</span></a>:</strong></p>
 <ul class="simple">
 <li><p>Import required packages</p></li>
 <li><p>Define parameters describing regions, variables, and data</p></li>
@@ -471,19 +489,19 @@ document.write(`
 <li><p>Define required functions</p></li>
 <li><p>Show a sample global map of temperature biases</p></li>
 </ul>
-<p><strong>2. ERA5 data retrieval and area average:</strong></p>
+<p><strong>2. <a class="reference internal" href="#era5-data-retrieval-and-area-average"><span class="xref myst">ERA5 data retrieval and area average</span></a>:</strong></p>
 <ul class="simple">
 <li><p>Retrieve monthly ERA5 data and compute the regional mean climatology, i.e. 12 values for each area</p></li>
 <li><p>Compute area averages</p></li>
 </ul>
-<p><strong>3. Seasonal hindcast retrieval and area average:</strong></p>
+<p><strong>3. <a class="reference internal" href="#seasonal-hindcast-data-retrieval-and-area-average"><span class="xref myst">Seasonal hindcast data retrieval and area average</span></a>:</strong></p>
 <ul class="simple">
 <li><p>Retrieve monthly seasonal forecast data from all available centres and for all starting dates, compute the monthly mean climatology (i.e. 6 values, since each forecast is valid for 6 months) and subtract the corresponding ERA5 climatology.</p></li>
 <li><p>Compute area averages</p></li>
 <li><p>Plot a sample map</p></li>
 </ul>
-<p><strong>4. Compute the hindcast bias</strong></p>
-<p><strong>5. Plot and describe results:</strong></p>
+<p><strong>4. <a class="reference internal" href="#compute-the-hindcast-bias"><span class="xref myst">Compute the hindcast bias</span></a></strong></p>
+<p><strong>5. <a class="reference internal" href="#plot-and-describe-results"><span class="xref myst">Plot and describe results</span></a>:</strong></p>
 <ul class="simple">
 <li><p>Plots are shown in a comprehensive set of panels that provide an overview of the multimodel performance</p></li>
 <li><p>The results are summarised and discussed</p></li>
@@ -494,12 +512,17 @@ document.write(`
 <section id="analysis-and-results">
 <h2>Analysis and results<a class="headerlink" href="#analysis-and-results" title="Link to this heading">#</a></h2>
 <section id="choose-the-data-to-use-and-setup-the-code">
-<h3>1. Choose the data to use and setup the code.<a class="headerlink" href="#choose-the-data-to-use-and-setup-the-code" title="Link to this heading">#</a></h3>
+<h3>1. Choose the data to use and setup the code<a class="headerlink" href="#choose-the-data-to-use-and-setup-the-code" title="Link to this heading">#</a></h3>
 <section id="import-required-packages">
 <h4>Import required packages<a class="headerlink" href="#import-required-packages" title="Link to this heading">#</a></h4>
 <p>We use the <code class="docutils literal notranslate"><span class="pre">regionmask</span> <span class="pre">package</span></code> to extract climatologies for a few selected regiones that have already e been adopted in several climate studies, including the analysis presented in the latest IPCC report.</p>
 <p>A description of the regions adopted for climate assesements in the scientific literature is available <a class="reference external" href="https://regionmask.readthedocs.io/en/stable/defined_scientific.htm">here</a>.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -512,6 +535,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 <section id="define-parameters-describing-regions-variables-and-data">
@@ -528,7 +552,12 @@ document.write(`
 <li><p>NWS: Western Coast of South America</p></li>
 </ul>
 <p>A <code class="docutils literal notranslate"><span class="pre">common_request</span></code> is defined in order to cover the entire global domain and the entire hindcast period from 1993 to 2016. Specific data requests are then defined for the reanalysis and for the seasonal forecasts, so that all available months and lead times are retrieved for the analysis.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Time</span>
 <span class="n">year_start_hindcast</span> <span class="o">=</span> <span class="mi">1993</span>
@@ -612,12 +641,18 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 <section id="plot-the-chosen-regions">
 <h4>Plot the chosen regions<a class="headerlink" href="#plot-the-chosen-regions" title="Link to this heading">#</a></h4>
 <p>For the bias analysis we use 8 out of the 45 regions defined in the <code class="docutils literal notranslate"><span class="pre">regionmask</span></code> package in order to assess the systematic errors of the modelling systems under different climatic regimes (tropical, extratropical, continental, maritime) with a number of cases maneageable within the notebook.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_defined_regions</span><span class="p">(</span><span class="n">defined_regions_module_name</span><span class="p">):</span>
     <span class="n">defined_regions</span> <span class="o">=</span> <span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span>
@@ -638,9 +673,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/9080e79adaa73940aaae64eb0cc72061f6f643c7c2ac9bdca7d0497afe1299c0.png" src="../_images/9080e79adaa73940aaae64eb0cc72061f6f643c7c2ac9bdca7d0497afe1299c0.png" />
-</div>
+</details>
 </div>
 </section>
 <section id="define-the-required-functions">
@@ -656,7 +689,12 @@ document.write(`
 <li><p>The function <code class="docutils literal notranslate"><span class="pre">get_seasonal_maps</span></code> is used to derive a sample bias map to illustrate how the analysis is performed.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">monthly_mean</span></code> function will be used to derive the monthly values at the appropriate <code class="docutils literal notranslate"><span class="pre">monthly_mean</span></code> before calculating the bias.</p></li>
 </ul>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">regionalised_spatial_weighted_mean</span><span class="p">(</span>
     <span class="n">ds</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">defined_regions_module_name</span><span class="p">,</span> <span class="n">weights</span><span class="p">,</span> <span class="n">mean_dims</span><span class="o">=</span><span class="kc">None</span>
@@ -748,13 +786,19 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 </section>
 <section id="era5-data-retrieval-and-area-average">
-<h3>2. ERA5 data retrieval and area average`.<a class="headerlink" href="#era5-data-retrieval-and-area-average" title="Link to this heading">#</a></h3>
+<h3>2. ERA5 data retrieval and area average<a class="headerlink" href="#era5-data-retrieval-and-area-average" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">regionalised_spatial_weighted_mean</span></code> is applied for all regions and all variables selected for download. All time series of the regionalised means are collected in the same xarray <code class="docutils literal notranslate"><span class="pre">ds_reanalysis</span></code>.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the reanalysis data</span>
 <span class="n">datasets</span> <span class="o">=</span> <span class="p">[]</span>
@@ -782,12 +826,18 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 <section id="seasonal-hindcast-data-retrieval-and-area-average">
-<h3>3. Seasonal hindcast data retrieval and area average`.<a class="headerlink" href="#seasonal-hindcast-data-retrieval-and-area-average" title="Link to this heading">#</a></h3>
+<h3>3. Seasonal hindcast data retrieval and area average<a class="headerlink" href="#seasonal-hindcast-data-retrieval-and-area-average" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">regionalised_spatial_weighted_mean</span></code> is applied for all centres, regions and all variables selected for download. Missing variables are handled, so the download and transform process is not interrupted. All time series of the regionalised means are collected in the same xarray <code class="docutils literal notranslate"><span class="pre">ds_seasonal</span></code>.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the seasonal forecast data</span>
 <span class="n">datasets</span> <span class="o">=</span> <span class="p">[]</span>
@@ -833,6 +883,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 24/24 [00:01&lt;00:00, 12.37it/s]
 </pre></div>
@@ -844,7 +895,12 @@ document.write(`
 <h3>Show a sample global map of temperature biases<a class="headerlink" href="#show-a-sample-global-map-of-temperature-biases" title="Link to this heading">#</a></h3>
 <p>To reduce computation, this notebook simplifies the bias analysis by focusing on mean values of surface variables across the chosen regions. The goal is to offer a broad overview of the bias evolution over lead times. Thus, it is crucial that the selected regions exhibit sufficient homogeneity to minimize the compensation effects from systematic errors of varying sign.</p>
 <p>This section of the notebook offers a simple tool for exploring sample bias maps and confirming that bias sign remain relatively constant within selected regions. Additionally, it serves as an insight on the behavior of individual models summarized in the comprehensive tables provided later in the notebook.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set parameters</span>
 <span class="n">starting_month</span> <span class="o">=</span> <span class="mi">1</span>
@@ -907,10 +963,11 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
-<section id="compute-bias">
-<h3>4. Compute bias<a class="headerlink" href="#compute-bias" title="Link to this heading">#</a></h3>
+<section id="compute-the-hindcast-bias">
+<h3>4. Compute the hindcast bias<a class="headerlink" href="#compute-the-hindcast-bias" title="Link to this heading">#</a></h3>
 <p>The the seasonal hindcast data are arranged in a four-dimensional array <code class="docutils literal notranslate"><span class="pre">ds_seasonal[i,j,n,k]</span></code>, where:</p>
 <blockquote>
 <div><ul class="simple">
@@ -929,7 +986,12 @@ document.write(`
 </ul>
 </div></blockquote>
 <p>With such a shaping and setup of the datasets <code class="docutils literal notranslate"><span class="pre">ds_seasonal</span></code> and <code class="docutils literal notranslate"><span class="pre">ds_reanalysis</span></code> the computation of the bias is straightforward.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds_reanalysis</span> <span class="o">=</span> <span class="n">monthly_mean</span><span class="p">(</span><span class="n">ds_reanalysis</span><span class="p">)</span>
 <span class="n">ds_seasonal</span> <span class="o">=</span> <span class="n">monthly_mean</span><span class="p">(</span><span class="n">ds_seasonal</span><span class="p">)</span>
@@ -945,6 +1007,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 <section id="plot-and-describe-results">
@@ -954,7 +1017,12 @@ document.write(`
 <p>The following tables summarise the monthly bias for chosen C3S seasonal systems (labelled by producing centre) and selected areas.</p>
 <p>In each panel, the horizontal axis represents the validity period of the forecast, while the vertical axis shows the corresponding start dates. Thus, each horizontal strip of coloured tiles shows the evolution of the mean temperature bias over the six-month period of validity of each forecast.</p>
 <p>Reading each panel from bottom to top, the strips of coloured tiles are progressively shifted by one month, corresponding to the same shift in the starting date of the forecast. The horizontal axis is periodic: forecasts starting after August have their last months on the left side of the panel.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">centre</span> <span class="o">=</span> <span class="s2">&quot;ecmwf&quot;</span>
 <span class="n">region</span> <span class="o">=</span> <span class="s2">&quot;WNA&quot;</span>
@@ -963,6 +1031,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="../_images/ecab5a886c876225e427a22d6e1a6f5aff62c696cd4bcf2ca7a4410519b698aa.png" src="../_images/ecab5a886c876225e427a22d6e1a6f5aff62c696cd4bcf2ca7a4410519b698aa.png" />
 </div>
@@ -975,7 +1044,12 @@ document.write(`
 <p><strong>Precipitation</strong> - As in the case of temperature, the bias in precipitation tends to be more dependent on the validity period of the forecasts. The regions with the largest systematic bias are northeastern Brazil and southern Asia, where all models tend to overestimate the amplitude of the seasonal cycle.</p>
 <p><strong>Wind speed</strong> - Unlike temperature and precipitation, the bias of wind speed does not show a significant seasonal cycle over most of the selected regions. The only exceptions are northeastern Brazil and southern Asia, where some models (e.g. ECCC and NCEP) show a positive bias during the months of June to September.</p>
 <p><strong>Dew point temperature</strong> - As in the case of wind speed, the dew point temperature bias tends to have a weaker seasonal cycle than temperature and precipitation. However, some regions (southern Asia and western North America) show a slightly stronger seasonal dependence of the bias. NOTE: Dew point temperature is not available for ECCC.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_kwargs</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;2m_temperature&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;cmap&quot;</span><span class="p">:</span> <span class="s2">&quot;RdBu_r&quot;</span><span class="p">,</span> <span class="s2">&quot;levels&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mf">.5</span><span class="p">),</span> <span class="s2">&quot;extend&quot;</span><span class="p">:</span> <span class="s2">&quot;both&quot;</span><span class="p">},</span>
@@ -1006,6 +1080,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="../_images/b12b2dc285a78d3ea4707c2a58f7936dda3af9dc4102b9f93cea24b847755a4d.png" src="../_images/b12b2dc285a78d3ea4707c2a58f7936dda3af9dc4102b9f93cea24b847755a4d.png" />
 <img alt="../_images/165b54000f9bc1333e26fa5f619c98853e575840e8c3de7b476db885dd0addf7.png" src="../_images/165b54000f9bc1333e26fa5f619c98853e575840e8c3de7b476db885dd0addf7.png" />
@@ -1016,17 +1091,34 @@ document.write(`
 </section>
 </section>
 </section>
+<section id="if-you-want-to-know-more">
+<h2>If you want to know more<a class="headerlink" href="#if-you-want-to-know-more" title="Link to this heading">#</a></h2>
+<section id="key-resources">
+<h3>Key resources<a class="headerlink" href="#key-resources" title="Link to this heading">#</a></h3>
+<p>Some key resources and further reading were linked throughout this assessment.</p>
+<p>The CDS catalogue entries for the data used were:</p>
+<ul class="simple">
+<li><p>Seasonal forecast monthly statistics on single levels: <a class="reference external" href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/seasonal-monthly-single-levels?tab=overview">https://cds.climate.copernicus.eu/cdsapp#!/dataset/seasonal-monthly-single-levels?tab=overview</a></p></li>
+<li><p>ERA5 monthly averaged data on single levels from 1940 to present: <a class="reference external" href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview">https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview</a></p></li>
+</ul>
+<p>Code libraries used:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/bopen/c3s-eqc-automatic-quality-control/tree/main/c3s_eqc_automatic_quality_control">C3S EQC custom functions</a>, <code class="docutils literal notranslate"><span class="pre">c3s_eqc_automatic_quality_control</span></code>,  prepared by <a class="reference external" href="https://www.bopen.eu/">BOpen</a></p></li>
+</ul>
+</section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://www.nature.com/articles/s41598-018-20628-2">[1]</a> Rodriguez, D., De Voil, P., Hudson, D., Brown, J. N., Hayman, P., Marrou, H., &amp; Meinke, H. (2018). Predicting optimum crop designs using crop models and seasonal climate forecasts. Scientific reports, 8(1), 2231.</p>
 <p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0168192318303836">[2]</a> Jha, P. K., Athanasiadis, P., Gualdi, S., Trabucco, A., Mereu, V., Shelia, V., &amp; Hoogenboom, G. (2019). Using daily data from seasonal forecasts in dynamic crop models for yield prediction: A case study for rice in Nepal’s Terai. Agricultural and forest meteorology, 265, 349-358.</p>
 <p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S2405880722000425">[3]</a> Dainelli, R., Calmanti, S., Pasqui, M., Rocchi, L., Di Giuseppe, E., Monotti, C., … &amp; Toscano, P. (2022). Moving climate seasonal forecasts information from useful to usable for early within-season predictions of durum wheat yield. Climate Services, 28, 100324.</p>
 <p><a class="reference internal" href="#"><span class="xref myst">[4]</span></a> Lledó, L., Torralba, V., Soret, A., Ramon, J., &amp; Doblas-Reyes, F. J. (2019). Seasonal forecasts of wind power generation. Renewable Energy, 143, 91-100.</p>
 <p><a class="reference external" href="https://link.springer.com/article/10.1007/s00382-021-05828-3">[5]</a>  Prodhomme, C., Materia, S., Ardilouze, C., White, R. H., Batté, L., Guemas, V., … &amp; García-Serrano, J. (2021). Seasonal prediction of European summer heatwaves. Climate Dynamics, 1-18.</p>
-<p><a class="reference external" href="https://link.springer.com/article/10.1007/s00382-019-04640-4">[6]</a> Manzanas, R., Gutiérrez, J. M., Bhend, J., Hemri, S., Doblas-Reyes, F. J., Torralba, V., … &amp; Brookshaw, A. (2019). Bias adjustment and ensemble recalibration methods for seasonal forecasting: a comprehensive intercomparison using the C3S dataset. Climate Dynamics, 53, 1287-1305.</p>
+<p><a class="reference external" href="https://doi.org/10.1175/JHM-D-19-0042.1">[6]</a> Li, W., Chen, J. I. E., Li, L. U., Chen, H. U. A., Liu, B., Xu, C. Y., &amp; Li, X. (2019). Evaluation and bias correction of S2S precipitation for hydrological extremes. Journal of Hydrometeorology, 20(9), 1887-1906.</p>
 <p><a class="reference external" href="https://link.springer.com/article/10.1007/s00382-019-04640-4">[7]</a> Manzanas, R. (2020). Assessment of model drifts in seasonal forecasting: Sensitivity to ensemble size and implications for bias correction. Journal of Advances in Modeling Earth Systems, 12(3), e2019MS001751.</p>
 <p><a class="reference external" href="https://link.springer.com/article/10.1007/s00382-017-3962-9">[8]</a> Hermanson, L., Ren, H. L., Vellinga, M., Dunstone, N. D., Hyder, P., Ineson, S., … &amp; Williams, K. D. (2018). Different types of drifts in two seasonal forecast systems and their dependence on ENSO. Climate dynamics, 51, 1411-1426.</p>
 <p><a class="reference external" href="https://link.springer.com/article/10.1007/s00382-020-05314-2">[9]</a> Hemri, S., Bhend, J., Liniger, M. A., Manzanas, R., Siegert, S., Stephenson, D. B., … &amp; Doblas-Reyes, F. J. (2020). How to create an operational multi-model of seasonal forecasts?. Climate Dynamics, 55, 1141-1157.</p>
+<p><a class="reference external" href="https://link.springer.com/article/10.1007/s00382-019-04640-4">[10]</a> Manzanas, R., Gutiérrez, J. M., Bhend, J., Hemri, S., Doblas-Reyes, F. J., Torralba, V., … &amp; Brookshaw, A. (2019). Bias adjustment and ensemble recalibration methods for seasonal forecasting: a comprehensive intercomparison using the C3S dataset. Climate Dynamics, 53, 1287-1305.</p>
+</section>
 </section>
 </section>
 
@@ -1060,6 +1152,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="seasonal.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Seasonal forecasts</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../projections/projections.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Climate projections</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1076,21 +1186,22 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-risk-assessment-in-agriculture-using-seasonal-forecasts-as-an-input-for-climate-impact-models">Use case: Risk assessment in agriculture using seasonal forecasts as an input for climate impact models.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-assessment-questions">Quality assessment questions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-assessment-statement">Quality assessment statement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-and-results">Analysis and results</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-data-to-use-and-setup-the-code">1. Choose the data to use and setup the code.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-data-to-use-and-setup-the-code">1. Choose the data to use and setup the code</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#import-required-packages">Import required packages</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#define-parameters-describing-regions-variables-and-data">Define parameters describing regions, variables, and data</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-the-chosen-regions">Plot the chosen regions</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#define-the-required-functions">Define the required functions</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5-data-retrieval-and-area-average">2. ERA5 data retrieval and area average`.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seasonal-hindcast-data-retrieval-and-area-average">3. Seasonal hindcast data retrieval and area average`.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5-data-retrieval-and-area-average">2. ERA5 data retrieval and area average</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seasonal-hindcast-data-retrieval-and-area-average">3. Seasonal hindcast data retrieval and area average</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-a-sample-global-map-of-temperature-biases">Show a sample global map of temperature biases</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-bias">4. Compute bias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-the-hindcast-bias">4. Compute the hindcast bias</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-and-describe-results">5. Plot and describe results</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-read-the-results">How to read the results</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
@@ -1098,7 +1209,11 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-you-want-to-know-more">If you want to know more</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-resources">Key resources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
