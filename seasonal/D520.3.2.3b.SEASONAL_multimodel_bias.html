@@ -647,7 +647,12 @@ document.write(`
 <section id="plot-the-chosen-regions">
 <h4>Plot the chosen regions<a class="headerlink" href="#plot-the-chosen-regions" title="Link to this heading">#</a></h4>
 <p>For the bias analysis we use 8 out of the 45 regions defined in the <code class="docutils literal notranslate"><span class="pre">regionmask</span></code> package in order to assess the systematic errors of the modelling systems under different climatic regimes (tropical, extratropical, continental, maritime) with a number of cases maneageable within the notebook.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_defined_regions</span><span class="p">(</span><span class="n">defined_regions_module_name</span><span class="p">):</span>
     <span class="n">defined_regions</span> <span class="o">=</span> <span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span>
@@ -668,6 +673,7 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="../_images/9080e79adaa73940aaae64eb0cc72061f6f643c7c2ac9bdca7d0497afe1299c0.png" src="../_images/9080e79adaa73940aaae64eb0cc72061f6f643c7c2ac9bdca7d0497afe1299c0.png" />
 </div>
